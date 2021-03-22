@@ -10,6 +10,10 @@ html {
      font-family:'Oswald','Open Sans', sans-serif;
 }
 
+hr {
+     margin: 20px 0;
+}
+
  /* Dùng Chung  */
 .col-full {
      width: 100%;
@@ -236,22 +240,16 @@ html {
 }
 
 /* Post Comment  */
+
 .post-comment {
-     border-top: 1px solid #757575;
      margin-bottom: 16px;
      display: flex;
 }
 
-.comment-img {
-     padding: 16px 0;
-}
+
 
 .comment-img img {
      width: 90px;
-}
-
-.comment-title {
-     padding: 16px 0;
 }
 
 .comment-name {
