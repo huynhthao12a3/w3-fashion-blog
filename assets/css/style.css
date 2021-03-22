@@ -15,8 +15,16 @@ hr {
 }
 
  /* Dùng Chung  */
+
+.clear {
+     clear: both;
+}
+
 .col-full {
      width: 100%;
+}
+.col-half {
+     width: 50%;
 }
 .col-10 {
      width: 83.33333%;
@@ -157,6 +165,7 @@ hr {
      background-color: #f1f1f1;
      border: 1px solid #ccc;
      padding: 8px 16px;
+     display: flex;
 }
 
 /* Blog  */
@@ -273,4 +282,270 @@ hr {
      font-family: "Open Sans";
      margin: 16px 0;
      display: block;
+}
+
+/* ----- Menu -----  */
+.menu hr {
+     border: none;
+}
+
+/* My Name  */
+.my-name {
+     margin:16px;
+}
+
+.my-name img {
+     width: 100%;
+     filter: grayscale(75%);
+     vertical-align: middle;
+}
+
+.my-name-desc {
+     background-color: #000;
+     color: #fff;
+     padding:1px 16px;
+}
+
+.my-name-desc > h1 {
+     font-size: 20px;
+     margin: 10px 0;
+}
+
+.my-name-desc > p {
+     font-size: 15px;
+     font-family: "Open Sans";
+     margin: 10px 0;
+}
+
+/* Popular  */
+.popular {
+     margin: 16px;
+}
+
+.popular-heading {
+     font-size: 20px;
+     padding: 18px 16px;
+     color: #fff;
+     background-color: #000;
+}
+
+.popular-list {
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+}
+
+.popular-item {
+     background-color: #fff;
+     padding: 16px;
+     border-bottom: 1px solid #ddd;
+     display: flex;
+     font-family: "Open Sans";
+
+}
+
+.popular-item > img {
+     width: 50px;
+     margin-right: 16px;
+}
+
+.item-info > span {
+     font-size: 18px;
+}
+
+.item-info > p {
+     font-size: 15px;
+}
+
+.popular-list .popular-item:nth-child(4) > img {
+     filter: sepia(75%);
+}
+
+/* Advertise  */
+.advertise {
+     margin: 16px;
+}
+
+.advertise-heading {
+     padding: 18px 16px;
+     color: #fff;
+     background-color: #000;
+     font-size: 20px;
+     
+}
+
+.advertise-info {
+     background-color: #fff;
+     padding: 16px;
+     align-items: center;
+}
+
+.advertise-info > span {
+     background-color: #F1F1F1;
+     padding: 0 16px;
+     display: block;
+     height: 200px;
+     position: relative;;
+}
+
+.advertise-info > span > p {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-family: "Open Sans";
+     font-size: 15px;
+}
+
+/* Tags  */
+.tags {
+     margin: 16px;
+}
+
+.tags-heading {
+     padding: 18px 16px;
+     color: #fff;
+     background-color: #000;
+     font-size: 20px;
+}
+
+.tags-info {
+     background-color: #fff;
+     padding: 16px;
+}
+
+.tags-info > span {
+     background-color: #f1f1f1;
+     padding: 0 8px;
+     margin-bottom: 10px;
+     display: inline-block;
+     font-size: 15px;
+     font-family: "Open Sans";
+
+}
+
+.tags-info > span:first-child {
+     background-color: #000;
+     color: #fff;
+}
+
+/* Inspiration  */
+.inspiration {
+     margin: 16px;
+}
+
+.inspiration-heading {
+     padding: 18px 16px;
+     color: #FFF;
+     background-color: #000;
+     font-size: 20px;
+}
+
+.inspiration-info {
+     padding: 8px;
+     display: flex;
+     background-color: #fff;
+}
+
+.inspiration-info img {
+     padding: 8px;
+     display: block;
+     width: 100%;
+}
+
+/* Follow  */
+.follow {
+     margin: 16px;
+}
+
+.follow-heading {
+     padding: 18px 16px;
+     color: #FFF;
+     background-color: #000;
+     font-size: 20px;
+}
+
+.follow-info {
+     padding:8px 16px;
+     background-color: #fff;
+     font-size: 24px;
+}
+
+.follow-info i {
+     margin: 0 2px;
+}
+
+.follow-info i:hover {
+     opacity: 0.6;
+}
+
+/* Subscribe  */
+.subscribe {
+     margin: 16px;
+}
+
+.subscribe-heading {
+     padding: 18px 16px;
+     color: #FFF;
+     background-color: #000;
+     font-size: 20px;
+}
+
+.subscribe-info {
+     padding: 16px;
+     background-color: #fff;
+}
+.subscribe-info > p {
+     font-family: "Open Sans";
+     font-size: 15px;
+}
+.subscribe-info .sub-email {
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #ccc;
+     margin: 16px 0;
+}
+
+.subscribe-info button {
+     width: 100%;
+     border: none;
+     font-family: "Open Sans";
+     font-size: 15px;
+     padding: 8px 0;
+     background-color: #F44336;
+     color: #fff;
+}
+
+/* ----- Footer -----  */
+.footer {
+     width: 100%;
+     background-color: #616161;
+     padding: 32px;
+}
+
+.footer .to-top {
+     padding:12px 24px;
+     background-color: #000;
+     color: #fff;
+     text-decoration: none;
+     font-family: "Open Sans";
+     font-size: 15px;
+     margin-bottom: 16px;
+     display: inline-block;
+}
+
+.footer .to-top i {
+     margin-right: 16px;
+}
+
+.footer > p {
+     margin: 16px 0;
+     display: block;
+     color: #fff;
+     font-family: "Open Sans";
+     font-size: 15px;
+}
+
+.footer > p > a {
+     color: #fff;
 }
