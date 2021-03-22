@@ -1,0 +1,278 @@
+/* Reset CSS */
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+
+html {
+     font-family:'Oswald','Open Sans', sans-serif;
+}
+
+ /* Dùng Chung  */
+.col-full {
+     width: 100%;
+}
+.col-10 {
+     width: 83.33333%;
+}
+.col-8 {
+     width: 66.66666%;
+}
+
+.col-4 {
+     width: 33.33333%;
+}
+.col-2 {
+     width: 16.66666%;
+}
+.col-1 {
+     width: 8.33333%;
+}
+
+/* ----- Header ----- */
+.header {
+     width: 100%;
+     background: #000;
+     display: flex;
+     justify-content: space-between
+}
+
+/* Social List  */
+.header .social-list {
+     display: flex;
+
+}
+
+.header .social-item {
+     display: block;
+     list-style: none;
+}
+
+.social-item a {
+     padding: 8px 16px;
+     color: #fff;
+     display: block;
+     font-size: 15px;
+     width: 100%;
+}
+
+.social-item a:hover,
+.header-search a:hover{
+     background-color: #cccccc;
+     color: #000;
+     opacity: 0.9;
+}
+
+/* Search */
+.header-search a {
+     padding: 8px 16px;
+     display: block;
+     font-size: 15px;
+     color: #fff;
+}
+
+
+/* ----- Banner -----  */
+.banner {
+     max-width: 1600px;
+     margin: 0 auto;
+     background-color: #fff;
+}
+
+/* Slogan  */
+.banner-slogan {
+     padding: 48px 16px;
+     text-align: center;
+}
+
+.banner-slogan h3 {
+     margin: 10px 0;
+     font-size: 48px;
+}
+
+.banner-slogan p {
+     margin: 10px 0;
+     font-size: 16px;
+}
+
+.banner-slogan p span {
+     background-color: #000;
+     color: #fff;
+     padding: 0 8px;
+}
+
+/* Info  */
+.banner-info {
+     position: relative;
+}
+
+.banner-info img {
+     display: block;
+}
+
+.banner-info .name {
+     position: absolute;
+     color: #fff;
+     padding: 12px 24px;
+     top: 37%;
+}
+
+.banner-info .name p {
+     font-size: 36px;
+     margin: 10px 0;
+}
+
+.banner-info .name h1 {
+     font-size: 64px;
+     margin: 10px 0;
+
+}
+
+.banner-info .name button {
+     font-size: 18px;
+     padding: 12px 24px;
+     border: none;
+     border-radius: 2px;
+     background-color: #fff;
+     opacity: 0.6;
+     font-family:'Oswald';
+}
+
+.banner-info .name button:hover {
+     background-color: #ccc;
+     cursor: pointer;
+}
+
+
+/* ----- Content ----- */
+.content {
+     max-width: 1600px;
+     margin: 0 auto;
+     background-color: #f1f1f1;
+     border: 1px solid #ccc;
+     padding: 8px 16px;
+}
+
+/* Blog  */
+
+.post {
+     background-color: #fff;
+     margin: 16px;
+     padding: 12px 24px;
+}
+
+/* Post Title  */
+.post-title {
+     text-align: center;
+}
+
+.post-title h1 {
+     margin: 10px 0;
+     font-size: 24px;
+}
+
+.post-title p {
+     margin: 10px 0;
+     font-size: 18px;
+}
+.post-title p span {
+     color: #A4A4A4;
+}
+.post > img {
+     width: 100%;
+     padding: 16px 0;
+} 
+
+/* Post Description  */
+.post-desc {
+     font-family: "Open Sans";
+     text-align: justify;
+     line-height: 1.8;
+     font-size: 15px;
+}
+
+.post-desc p {
+     margin: 16px 0;
+}
+
+/* Post Activities  */
+.post-activities {
+     margin: 16px 0;
+     display: flex;
+     justify-content: space-between;
+}
+
+.post-activities .like {
+     padding: 8px 16px;
+     background-color: #fff;
+     border: 1px solid #ccc;
+     font-size: 15px;
+     font-family: "Open Sans";
+     cursor: pointer;
+
+}
+
+.post-activities .like i {
+     margin-right: 4px;
+}
+
+.post-activities .replies {
+     font-size: 15px;
+     padding: 8px 16px;
+     font-family: "Open Sans";
+     background-color: #000;
+     border: none;
+     color: #fff;
+     font-weight: bolder;
+     cursor: pointer;
+}
+
+.post-activities .replies span {
+     color: #000;
+     background-color: #fff;
+     padding: 0 8px;
+}
+
+/* Post Comment  */
+.post-comment {
+     border-top: 1px solid #757575;
+     margin-bottom: 16px;
+     display: flex;
+}
+
+.comment-img {
+     padding: 16px 0;
+}
+
+.comment-img img {
+     width: 90px;
+}
+
+.comment-title {
+     padding: 16px 0;
+}
+
+.comment-name {
+     display: flex;
+     padding: 4px;
+
+}
+
+
+.comment-name p {
+     font-size: 20px;
+}
+
+.comment-name p span {
+     font-size: 15px;
+     color: #A4A4A4;
+}
+
+.comment-title > span {
+     font-size: 15px;
+     font-family: "Open Sans";
+     margin: 16px 0;
+     display: block;
+}
