@@ -7,6 +7,8 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Fashion Blog</title>
      <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/responsive.css">
+     <script src="./click.js"></script>
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
      <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.2-web/css/all.min.css">
@@ -40,7 +42,7 @@
                </div>
           </div>
           <div class="content">
-               <div class="blog col-8">
+               <div class="blog col-8 m-col-full">
                     <div class="post">
                          <div class="post-title">
                               <h1>TITLE HEADING</h1>
@@ -67,22 +69,25 @@
 
                          </div>
                          <div class="post-activities">
-                              <button class="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                              <button class="like" onclick="likeFunction(this)">
+                                   <i class="fas fa-thumbs-up"></i>Like</button>
                               <button class="replies">Replies <span>1</span></button>
                          </div>
                          <hr>
                          </hr>
-                         <div class="post-comment">
-                              <div class="comment-img col-2">
-                                   <img src="./assets/img/comment1.jpg" alt="">
-                              </div>
-                              <div class="comment-title col-10">
-                                   <div class="comment-name">
-                                        <p>George <span>May 3, 2015, 6:32 PM</span> </p>
+                         <div class="post-show">
+                              <div class="post-comment">
+                                   <div class="comment-img col-2">
+                                        <img src="./assets/img/comment1.jpg" alt="">
                                    </div>
-                                   <span>Great blog post! Following</span>
-                              </div>
+                                   <div class="comment-title col-10">
+                                        <div class="comment-name">
+                                             <p>George <span>May 3, 2015, 6:32 PM</span> </p>
+                                        </div>
+                                        <span>Great blog post! Following</span>
+                                   </div>
 
+                              </div>
                          </div>
                     </div>
 
@@ -103,40 +108,44 @@
 
                          </div>
                          <div class="post-activities">
-                              <button class="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                              <button class="like" onclick="likeFunction(this)">
+                                   <i class=" fas fa-thumbs-up"></i>Like</button>
                               <button class="replies">Replies <span>2</span></button>
                          </div>
                          <hr>
                          </hr>
-                         <div class="post-comment">
-                              <div class="comment-img col-2">
-                                   <img src="./assets/img/comment2_1.jpg" alt="">
-                              </div>
-                              <div class="comment-title col-10">
-                                   <div class="comment-name">
-                                        <p>Amber <span>April 26, 2015, 10:52 PM</span> </p>
+                         <div class="post-show">
+                              <div class="post-comment">
+                                   <div class="comment-img col-2">
+                                        <img src="./assets/img/comment2_1.jpg" alt="">
                                    </div>
-                                   <span>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua.
+                                   <div class="comment-title col-10">
+                                        <div class="comment-name">
+                                             <p>Amber <span>April 26, 2015, 10:52 PM</span> </p>
+                                        </div>
+                                        <span>Love your blog page! Simply the best! Lorem ipsum dolor sit amet,
+                                             consectetur
+                                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                             aliqua.
 
-                                   </span>
+                                        </span>
+                                   </div>
+
                               </div>
+                              <div class="post-comment">
+                                   <div class="comment-img col-2">
+                                        <img src="./assets/img/comment2_2.jpg" alt="">
+                                   </div>
+                                   <div class="comment-title col-10">
+                                        <div class="comment-name">
+                                             <p>Angie <span>April 23, 2015, 9:12 PM</span> </p>
+                                        </div>
+                                        <span>Love hats!!</span>
+                                   </div>
 
+                              </div>
                          </div>
 
-                         <div class="post-comment">
-                              <div class="comment-img col-2">
-                                   <img src="./assets/img/comment2_2.jpg" alt="">
-                              </div>
-                              <div class="comment-title col-10">
-                                   <div class="comment-name">
-                                        <p>Angie <span>April 23, 2015, 9:12 PM</span> </p>
-                                   </div>
-                                   <span>Love hats!!</span>
-                              </div>
-
-                         </div>
                     </div>
 
                     <div class="post">
@@ -157,53 +166,57 @@
 
                          </div>
                          <div class="post-activities">
-                              <button class="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                              <button class="like" onclick="likeFunction(this)">
+                                   <i class=" fas fa-thumbs-up"></i>Like</button>
                               <button class="replies">Replies <span>3</span></button>
                          </div>
                          <hr>
                          </hr>
-                         <div class="post-comment">
-                              <div class="comment-img col-2">
-                                   <img src="./assets/img/comment3_1.jpg" alt="">
-                              </div>
-                              <div class="comment-title col-10">
-                                   <div class="comment-name">
-                                        <p>Jane <span>April 10, 2015, 7:22 PM</span> </p>
+                         <div class="post-show">
+                              <div class="post-comment">
+                                   <div class="comment-img col-2">
+                                        <img src="./assets/img/comment3_1.jpg" alt="">
                                    </div>
-                                   <span>That was a great runway show! Thanks for everything.</span>
-                              </div>
-
-                         </div>
-
-                         <div class="post-comment">
-                              <div class="comment-img col-2">
-                                   <img src="./assets/img/comment3_2.jpg" alt="">
-                              </div>
-                              <div class="comment-title col-10">
-                                   <div class="comment-name">
-                                        <p>John <span>April 8, 2015, 10:32 PM</span> </p>
+                                   <div class="comment-title col-10">
+                                        <div class="comment-name">
+                                             <p>Jane <span>April 10, 2015, 7:22 PM</span> </p>
+                                        </div>
+                                        <span>That was a great runway show! Thanks for everything.</span>
                                    </div>
-                                   <span>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+
                               </div>
 
-                         </div>
-
-                         <div class="post-comment">
-                              <div class="comment-img col-2">
-                                   <img src="./assets/img/comment3_3.jpg" alt="">
-                              </div>
-                              <div class="comment-title col-10">
-                                   <div class="comment-name">
-                                        <p>Anja <span>April 7, 2015, 9:12 PM</span> </p>
+                              <div class="post-comment">
+                                   <div class="comment-img col-2">
+                                        <img src="./assets/img/comment3_2.jpg" alt="">
                                    </div>
-                                   <span>Cant wait for the runway to start!</span>
+                                   <div class="comment-title col-10">
+                                        <div class="comment-name">
+                                             <p>John <span>April 8, 2015, 10:32 PM</span> </p>
+                                        </div>
+                                        <span>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit
+                                             amet,
+                                             consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                                   </div>
+
                               </div>
 
+                              <div class="post-comment">
+                                   <div class="comment-img col-2">
+                                        <img src="./assets/img/comment3_3.jpg" alt="">
+                                   </div>
+                                   <div class="comment-title col-10">
+                                        <div class="comment-name">
+                                             <p>Anja <span>April 7, 2015, 9:12 PM</span> </p>
+                                        </div>
+                                        <span>Cant wait for the runway to start!</span>
+                                   </div>
+
+                              </div>
                          </div>
                     </div>
                </div>
-               <div class="menu col-4">
+               <div class="menu col-4 m-col-full">
                     <div class="my-name">
                          <img src="./assets/img/my_name.jpg" alt="">
                          <div class="my-name-desc">
